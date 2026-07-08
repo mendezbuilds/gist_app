@@ -72,9 +72,14 @@ export const colors = {
     borderFocus: palette.indigo500,
 
     // Accent
-    accent: palette.coral500,            // #E8552F — constant
-    accentDim: palette.coral300,
-    accentSurface: palette.coral100,
+    accent: palette.indigo500,            // #1B2A6B — Indigo brand color
+    accentDim: palette.indigo300,
+    accentSurface: palette.indigo100,
+
+    // Brand highlight (Coral)
+    brandHighlight: palette.coral500,     // #E8552F
+    brandHighlightDim: palette.coral300,
+    brandHighlightSurface: palette.coral100,
 
     // Status / semantic
     success: '#2E7D5E',
@@ -123,9 +128,14 @@ export const colors = {
     borderFocus: palette.indigo400,
 
     // Accent
-    accent: palette.coral500,            // constant
-    accentDim: palette.coral700,
-    accentSurface: 'rgba(232, 85, 47, 0.15)',
+    accent: palette.indigo400,            // #3548A3 — Indigo brand color
+    accentDim: palette.indigo600,
+    accentSurface: 'rgba(53, 72, 163, 0.15)',
+
+    // Brand highlight (Coral)
+    brandHighlight: palette.coral500,     // #E8552F
+    brandHighlightDim: palette.coral700,
+    brandHighlightSurface: 'rgba(232, 85, 47, 0.15)',
 
     // Status / semantic
     success: '#4CAF81',
@@ -148,4 +158,4 @@ export const colors = {
   },
 } as const;
 
-export type ThemeColors = typeof colors.light;
+export type ThemeColors = typeof colors.light | typeof colors.dark;
